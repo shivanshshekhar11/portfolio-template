@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Portfolio
+        </title>
+        <style>
+
+            body{
+                font-family: Verdana, Tahoma, sans-serif;
+                margin:0;
+                font-size: large;
+            }
+
+            #welcome-section{
+                background-color:black;
+                text-align: center;
+                height: 100vh;
+                display:flex;
+                justify-content: center;
+                color:white;
+            }
+
+            #projects{
+                background-color: midnightblue;
+                text-align: center;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                color:white;
+            }
+
+            #contact{
+                background-color:black;
+                text-align: center;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                color:white;
+            }
+
+            footer{
+                display:flex;
+                justify-content: space-between;
+                background-color:maroon;
+                padding:1.5% 3% 1.5% 3%;
+                color:white;
+            }
+
+            #links{
+                display:flex;
+                justify-content: space-around;
+                width:40%;
+                margin:4% 30% 0% 30%;
+            }
+
+            header{
+                display:flex;
+                justify-content: space-between;
+                background-color:maroon;
+                position: fixed;
+                width:100%;
+                padding:2% 0% 2% 0%;
+                color: white;
+                z-index: 2;
+            }
+
+            .center{
+                align-self: center;
+            }
+
+            img{
+                width:25vw;
+                height:25vw;
+            }
+
+            #title{
+                margin-left: 3%;
+                color: whitesmoke;
+            }
+
+            #navbar{
+                margin-right: 3%;
+                display:flex;
+                width:20%;
+            }
+
+            .navbar{
+                align-self: center;
+                margin:0% 5% 0% 5%;
+            }
+
+            a{
+                text-decoration: none;
+                color:white;
+            }
+
+            #grid{
+                display:grid;
+                width:80vw;
+                grid-template-columns: 25vw 25vw 25vw;
+                grid-template-rows: 25vw 25vw;
+                grid-gap:6vw 2.5vw;
+                margin:5vw 0vw 10vw 6vw;
+            }
+
+            figcaption{
+                background-color:rgb(0, 0, 85);
+                width:25vw;
+                padding:5% 0% 5% 0%;
+            }
+
+            #show-all{
+                background-color: rgb(0, 0, 85);
+                border-radius: 1em;
+                border-style: none;
+                padding:2% 0% 2% 0%;
+                width:15%;
+                margin:auto;
+            }
+
+            i{
+                font-size: xx-large;
+            }
+
+            @media (min-width:500px){
+                #title{
+                    color: white;
+                }
+            }
+
+            .anime{
+                transition: 500ms;
+            }
+            
+            .anime:hover{
+                transform: scale(1.1);
+            }
+
+        </style>
+        <script src="https://kit.fontawesome.com/2886b68951.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <p id="title"><strong>Welcome</strong></p>
+            
+            <nav id="navbar">
+                <a class="navbar" href="#welcome-section">About</a>
+                <a class="navbar" href="#projects">Work</a>
+                <a class="navbar" href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="welcome-section">
+                <div class="center">
+                    <h1>Hey, I am shivanshshekhar11.</h1>
+                    <p><em>A web developer</em></p>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>These are some of my projects ...</h2>
+
+                <div id="grid">
+                    <figure class="project-tile anime">
+                        <a href="https://shivanshshekhar11.github.io/tribute-dr-balraug/"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"></a>
+                        <figcaption>Tribute Page</figcaption>
+                    </figure>
+
+                    <figure class="project-tile anime">
+                        <a href="https://shivanshshekhar11.github.io/product-page/"><img src="https://wallpapercave.com/wp/wp6077006.jpg"></a>
+                        <figcaption>Product Landing Page</figcaption>
+                    </figure>
+
+                    <figure class="project-tile anime">
+                        <a href="https://shivanshshekhar11.github.io/js-documentation/"><img src="https://wallpapercave.com/wp/wp6077006.jpg"></a>
+                        <figcaption>Technical Documentation Page</figcaption>
+                    </figure>
+                    
+                    <figure class="project-tile anime">
+                        <a href="https://shivanshshekhar11.github.io/service-survey-form/"><img src="https://wallpapercave.com/wp/wp6077006.jpg"></a>
+                        <figcaption>Product Survey Page</figcaption>
+                    </figure>
+
+                    <figure class="project-tile anime">
+                        <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"></a>
+                        <figcaption>Random Quote Machine</figcaption>
+                    </figure>
+
+                    <figure class="project-tile anime">
+                        <a href="https://codepen.io/freeCodeCamp/full/KzXQgy"><img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"></a>
+                        <figcaption>Tic Tac Toe</figcaption>
+                    </figure>
+                </div>
+
+                <p id="show-all" class="anime"><a href=#>Show all</a></p>
+
+            </section>
+            <section id="contact">
+                <h2>Let's work together ...</h2>
+                <p>How do you like your coffee ?</p>
+
+                <div id="links">
+                    <div class="links">
+                        <a href="https://github.com/shivanshshekhar11" target="_blank" id="profile-link"><i class="fab fa-github anime"></i></a>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://linkedin.com/in/shivanshshekhar11" target="_blank"><i class="fab fa-linkedin anime"></i></a>
+                    </div>
+
+                    <div class="links">
+                        <a href="mailto:shivanshshekhar11@gmail.com" target="_blank"><i class="fas fa-at anime"></i></a>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>*** This is just a template</p>
+                <p>&#169 Created for freecodecamp.org</p>
+            </footer>
+        </main>
+    </body>
+</html>
